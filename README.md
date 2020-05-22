@@ -37,9 +37,6 @@ Preprocess data:
 
     ./scripts/preprocess.sh
 
-Make sure to checkout the correct branch where the 2 news factors are added:
-
-git checkout factors_complete
 
 Then finally train a model:
 
@@ -48,7 +45,7 @@ Then finally train a model:
 
     Specific changes made for Exercise 4:
     You can now try to train models with additional factors.
-    Simply uncomment the method you would like to use on the train.ch script
+    Simply uncomment the method you would like to use on the train.sh script
     
 
 The training process can be interrupted at any time, and the best checkpoint will always be saved.
@@ -60,7 +57,11 @@ Evaluate a trained model with
 
 Evaluation results:
 
-                            Epochs	        Embedding Dimension	    BLEU Score
-Baseline System	            3	            512	                    9.4
-Added Embeddings	        3	            512	
-Concatenated Embeddings	    3	            512	
+|                         | Epochs | Embedding Dimension | BLEU Score |
+|-------------------------|--------|---------------------|------------|
+| Baseline System         | 3      | 512                 | 9.4        |
+| Added Embeddings        | 3      | 512                 |            |
+| Concatenated Embeddings | 3      | 512                 |            |
+|                         |        |                     |            |
+|                         |        |                     |            |
+|                         |        |                     |            |
