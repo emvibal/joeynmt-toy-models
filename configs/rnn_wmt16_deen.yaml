@@ -23,7 +23,7 @@ training:
     optimizer: "adam"
     normalization: "tokens"
     learning_rate: 0.0003
-    batch_size: 2048
+    batch_size: 1024
     batch_type: "token"
     eval_batch_size: 1024
     eval_batch_type: "token"
@@ -32,14 +32,14 @@ training:
     weight_decay: 0.0
     decrease_factor: 0.7
     early_stopping_metric: "ppl"
-    epochs: 2
+    epochs: 3
     validation_freq: 500
     logging_freq: 100
     eval_metric: "bleu"
     model_dir: "models/rnn_wmt16_deen"
     overwrite: False
     shuffle: True
-    use_cuda: False
+    use_cuda: True
     max_output_length: 100
     print_valid_sents: [0, 1, 2, 3, 4]
     label_smoothing: 0.1
