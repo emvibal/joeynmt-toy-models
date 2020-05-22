@@ -60,7 +60,7 @@ Evaluation results:
 |                         | Epochs | Embedding Dimension | BLEU Score |
 |-------------------------|--------|---------------------|------------|
 | Baseline System         | 3      | 512                 | 9.4        |
-| Added Embeddings        | 3      | 512                 |            |
+| Added Embeddings        | 3      | 512                 | 5.0        |
 | Concatenated Embeddings | 3      | 512                 |            |
 |                         |        |                     |            |
 |                         |        |                     |            |
