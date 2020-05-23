@@ -43,9 +43,9 @@ Then finally train a model:
     ./scripts/train.sh
 
 
-    Specific changes made for Exercise 4:
-    You can now try to train models with additional factors.
-    Simply uncomment the method you would like to use on the train.sh script
+Specific changes made for Exercise 4:
+You can now try to train models with additional factors.
+Simply uncomment the method you would like to use on the train.sh script
     
 
 The training process can be interrupted at any time, and the best checkpoint will always be saved.
@@ -54,6 +54,8 @@ Evaluate a trained model with
 
     ./scripts/evaluate.sh
 
+Specific changes for Exercise 4:
+In order to see how well the new factors work, change the model name on line 26 of the evaluate.sh script to the name you used for eaither of the two models (i.e. rnn_wmt16_factors_concatenate_deen or rnn_wmt16_factors_add_deen).
 
 Evaluation results:
 
@@ -61,7 +63,7 @@ Evaluation results:
 |-------------------------|--------|---------------------|------------|
 | Baseline System         | 3      | 512                 | 9.4        |
 | Added Embeddings        | 3      | 512                 | 5.0        |
-| Concatenated Embeddings | 3      | 512                 |            |
+| Concatenated Embeddings | 3      | 512                 | 5.0        |
 |                         |        |                     |            |
 |                         |        |                     |            |
 |                         |        |                     |            |
