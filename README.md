@@ -57,3 +57,7 @@ Documentation for Exercise 5 in Machine Translation
 | (b)  | yes       | 2000            | 3.3  |
 | (c)  | yes       | 5000            | 9.6  |
 | (d)  | yes       | 8000            | 15.3 |
+
+
+
+![alt text](https://github.com/emvibal/joeynmt-toy-models/blob/ex5/BLEU%20vs.%20Beam%20size.png)
