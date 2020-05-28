@@ -46,3 +46,16 @@ The training process can be interrupted at any time, and the best checkpoint wil
 Evaluate a trained model with
 
     ./scripts/evaluate.sh
+
+
+Documentation for Exercise 5 in Machine Translation
+
+
+|      | use BPE   | vocabulary size | BLEU |
+|------|-----------|-----------------|------|
+| (a)  | no        | 2000            | 9.2  |
+| (b)  | yes       | 2000            | 3.3  |
+| (c)  | yes       | 5000            | 9.6  |
+| (d)  | yes       | 8000            | 15.3 |
+|      |           |                 |      |
+|      |           |                 |      |
