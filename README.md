@@ -50,13 +50,34 @@ Evaluate a trained model with
 
 Documentation for Exercise 5 in Machine Translation
 
+Language Pair: English and Italian 
+Translation Direction: English -> Italian (en->it)
 
+
+Results of the automatic evaluation:
 |      | use BPE   | vocabulary size | BLEU |
 |------|-----------|-----------------|------|
 | (a)  | no        | 2000            | 9.2  |
 | (b)  | yes       | 2000            | 3.3  |
 | (c)  | yes       | 5000            | 9.6  |
 | (d)  | yes       | 8000            | 15.3 |
+
+...
+
+Translation quality (manual check):
+...
+
+Differences between the automatic evaluation findings and manual evaluation findings:
+...
+
+To retrace the steps I took in order to get the results mentioned above:
+
+... (all the prelimstuff goeas here)
+
+Subsample parallel training data:
+
+    Execute the python script found in the my_tools folder
+        python3 ./my_tools/prepare.py
 
 
 
