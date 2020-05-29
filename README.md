@@ -50,7 +50,8 @@ Evaluate a trained model with
 
 Documentation for Exercise 5 in Machine Translation
 
-Language Pair: English and Italian 
+Language Pair: English and Italian
+
 Translation Direction: English -> Italian (en->it)
 
 
@@ -72,13 +73,84 @@ Differences between the automatic evaluation findings and manual evaluation find
 
 To retrace the steps I took in order to get the results mentioned above:
 
-... (all the prelimstuff goeas here)
+1) Clone this repository on a folder of your choice
 
-Subsample parallel training data:
+        git clone https://github.com/bricksdont/joeynmt-toy-models
 
-    Execute the python script found in the my_tools folder
+        cd joeynmt-toy-models
+
+2) Go to the branch dedicated to exercise 5
+
+        git checkout ex5
+
+3) Install and activate a virtual environment
+
+        ./scripts/make_virtualenv.sh
+
+ -> After the running the script above, run the command that will be echoed on your terminal (source ...)
+
+4) Download the the data for this exercise
+
+        ./scripts/download data.sh
+
+5) Subsample and tokenize the parallel training data 
+
+Execute the python script found in the my_tools folder 
+
         python3 ./my_tools/prepare.py
 
+Word Level Model
+1) Duplicate the low_resource_example.yaml configugation and supply the parameters that only has a ? in them, except for  src_vocab: "?" and trg_vocab: "?". 
 
+If you are using GPU make sure to set cuda:True
+
+Make sure to change name:xxx
+
+2) Train your model
+
+    ./scripts/train.sh
+
+Open the script above amd ke sure to uncomment the command to word level and comment out the ones for the other models before running.
+
+3) Evaluate your model
+
+    ./scripts/evaluate.sh
+
+Open the script make sure to use write the name of the model and also rename the outfiles before running the script.
+
+
+
+BPE Level
+1) Learn and apply BPE and build a single vocab file
+
+    ./my_tools/bpe_tools.sh
+
+Open the script and set the required filenames before running.
+
+2) Duplicate the low_resource_example.yaml configugation and supply the parameters that only has a ? in them, except for  src_voc_limit:  and trg_voc_limit: ? 
+
+If you are using GPU make sure to set cuda:True
+
+Make sure to change name:xxx
+
+2) Train your model
+
+    ./scripts/train.sh
+
+Open the script above amd ke sure to uncomment the command to word level and comment out the ones for the other models before running.
+
+3) Evaluate your model
+
+    ./scripts/evaluate.sh
+
+Open the script make sure to use write the name of the model and also rename the outfiles before running the script.
+
+
+
+
+
+Impact of beam size on translation quality
+
+The graph below has been generated from a Google spreadsheet where I recorded the results of my experiments.
 
 ![alt text](https://github.com/emvibal/joeynmt-toy-models/blob/ex5/BLEU%20vs.%20Beam%20size.png)

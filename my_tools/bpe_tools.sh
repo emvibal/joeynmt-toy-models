@@ -50,7 +50,5 @@ python3 ../tools/joeynmt/scripts/build_vocab.py \
 --output_path "../data/en-it-bpe_vocab_size_8000.vocab"
 
 
-#evaluate:
 
-#word level:
 

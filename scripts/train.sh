@@ -15,6 +15,7 @@ device=0
 
 SECONDS=0
 
+#train word level:
 #CUDA_VISIBLE_DEVICES=$device OMP_NUM_THREADS=$num_threads python -m joeynmt train $configs/low_resource_example_word_level.yaml
 
 # train bpe:
