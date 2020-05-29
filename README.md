@@ -189,6 +189,6 @@ The graph below has been generated from a Google spreadsheet where I recorded th
 ![alt text](https://github.com/emvibal/joeynmt-toy-models/blob/ex5/BLEU%20vs.%20Beam%20size.png)
 
 
-Based on the results of the experiments I conducted for this exercise, I will be using a beam size of 3 because it achieved the best BLEU score among the other beam sizes tried and it also takes less time to run compared to the other beam sizes that received the same score. 
+Based on the results of the experiments I conducted for this exercise, I will be using a beam size of 3 because it achieved the best BLEU score among the other beam sizes tried and it also takes less time and computng power to run compared to the other beam sizes that received the same score. 
 
 The results of my experiments show that higher beam size leads to lower BLEU scores and that there is some form of a plateau from beam size 3 to 15 with just a few fluctuations within that range. 
